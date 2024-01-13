@@ -42,6 +42,12 @@ function insertNum(button){
 
 
 function insertOperator(button){
+    if(operatorSelected == true){
+        console.log(executeOperation().num1,executeOperation().result)
+        executeOperation().num1 = executeOperation().result
+        executeOperation().result = 0
+        operatorSelected == false
+    }
     operatorSign = button.innerHTML
     updateEquation()
     operatorSelected=true
