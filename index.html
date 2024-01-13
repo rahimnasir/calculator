@@ -5,25 +5,31 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="equation">
+
+        </div>
         <div id="calculator">
             <div id="numberButtons">
-                <button type="button" class="btnStyle">1</button>
-                <button type="button" class="btnStyle">2</button>
-                <button type="button" class="btnStyle">3</button>
-                <button type="button" class="btnStyle">4</button>
-                <button type="button" class="btnStyle">5</button>
-                <button type="button" class="btnStyle">6</button>
-                <button type="button" class="btnStyle">7</button>
-                <button type="button" class="btnStyle">8</button>
-                <button type="button" class="btnStyle">9</button>
-                <button type="button" class="btnStyle">0</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">1</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">2</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">3</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">4</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">5</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">6</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">7</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">8</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">9</button>
+                <button onclick="insertNum(this)" type="button" class="btnStyle">0</button>
+                <button onclick="clearAll()" type="button" class="btnStyle">C</button>
+                <button onclick="executeOperation()" type="button" class="btnStyle">=</button>
             </div>
             <div id="operatorButtons">
-                <button type="button" class="btnStyle">+</button>
-                <button type="button" class="btnStyle">-</button>
-                <button type="button" class="btnStyle">*</button>
-                <button type="button" class="btnStyle">/</button>
+                <button onclick="insertOperator(this)" type="button" class="btnStyle">+</button>
+                <button onclick="insertOperator(this)" type="button" class="btnStyle">-</button>
+                <button onclick="insertOperator(this)" type="button" class="btnStyle">*</button>
+                <button onclick="insertOperator(this)" type="button" class="btnStyle">/</button>
             </div>
+            <script src="scripts.js" defer></script>
         </div>
     </body>
 </html>
